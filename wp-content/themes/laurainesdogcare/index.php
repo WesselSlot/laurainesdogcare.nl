@@ -1,4 +1,3 @@
-<?php
-?>
+<?php load_template(TEMPLATEPATH . '/shared-templates/header.php'); ?>
 
-test
+<?php load_template(TEMPLATEPATH . '/shared-templates/footer.php'); ?>
