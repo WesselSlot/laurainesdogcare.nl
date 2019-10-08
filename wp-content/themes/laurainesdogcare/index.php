@@ -14,4 +14,22 @@
     </div>
 </header>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="row">
+                <div class="col-lg-4 center-text font-color-special icon-font-size">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="col-lg-4 center-text font-color-special icon-font-size">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="col-lg-4 center-text font-color-special icon-font-size">
+                    <i class="fas fa-dog"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php load_template(TEMPLATEPATH . '/shared-templates/footer.php'); ?>

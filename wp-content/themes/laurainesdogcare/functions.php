@@ -5,10 +5,16 @@ function enqueue_parent_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
     wp_enqueue_style( 'font-style', get_template_directory_uri().'/css/all.css' );
     wp_enqueue_style ('theme-style', get_template_directory_uri().'/css/clean-blog.min.css', array('parent-style'));
-    wp_enqueue_script('theme-style', get_template_directory_uri().'/js/clean-blog.min.js', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+
+function load_footer_scripts() {
+    wp_enqueue_script('theme-script', get_template_directory_uri().'/js/clean-blog.min.js', false);
+
+}
+
+add_action( 'wp_footer', 'load_footer_scripts' );
 
 // add a custom menu
 function wpb_custom_new_menu() {

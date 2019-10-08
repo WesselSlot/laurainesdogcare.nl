@@ -39,6 +39,7 @@
                     </li>
                 <?php } ?>
             </ul>
+            <button class="btn btn-primary">Reserveer nu</button>
         </div>
     </div>
 </nav>
