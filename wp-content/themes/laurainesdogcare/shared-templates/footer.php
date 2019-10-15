@@ -8,9 +8,7 @@ $core = new Core();
             <div class="row">
                 <a target="" href="https://www.instagram.com/lauraine_dogcare/">
                     <div id="instagram">
-                        <?php $data = $core->httpHelper->getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');\
-
-                        var_dump($data);
+                        <?php $data = $core->httpHelper->getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
                         foreach ($data->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>
                             <div class="insta-item">
                                 <img src="<?php echo $item->node->thumbnail_src ?>" alt="">
