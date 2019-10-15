@@ -1,5 +1,5 @@
 <?php
-require_once  (dirname(__FILE__).'/core/core.php');
+require_once  (dirname(__FILE__).'/../core/core.php');
 $core = new Core();
 ?>
 <?php wp_footer(); ?>
