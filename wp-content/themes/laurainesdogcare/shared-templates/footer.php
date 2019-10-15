@@ -1,5 +1,5 @@
 <?php
-require_once  (TEMPLATEPATH.'/core/core.php');
+require_once  ( $_SERVER['DOCUMENT_ROOT'].'/core/core.php');
 $core = new Core();
 ?>
 <?php wp_footer(); ?>

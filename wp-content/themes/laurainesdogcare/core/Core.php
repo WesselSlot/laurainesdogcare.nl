@@ -1,5 +1,5 @@
 <?php
-require_once  (TEMPLATEPATH.'/core/HttpHelper.php');
+require_once  ( $_SERVER['DOCUMENT_ROOT'].'/core/HttpHelper.php');
 
 class Core
 {
