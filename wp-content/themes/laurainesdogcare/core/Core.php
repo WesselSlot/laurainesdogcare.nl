@@ -1,5 +1,5 @@
 <?php
-require_once  ( $_SERVER['DOCUMENT_ROOT'].'/core/HttpHelper.php');
+require_once  (dirname(__FILE__).'/../core/HttpHelper.php');
 
 class Core
 {
