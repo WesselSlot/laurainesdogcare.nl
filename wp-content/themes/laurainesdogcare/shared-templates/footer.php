@@ -1,12 +1,12 @@
 <?php
-require (TEMPLATEPATH.'/core/core.php');
+require_once (TEMPLATEPATH.'/core/core.php');
 $core = new Core();
 ?>
 <?php wp_footer(); ?>
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <a target="_blank" href="https://www.instagram.com/lauraine_dogcare/">
+                <a target="" href="https://www.instagram.com/lauraine_dogcare/">
                     <div id="instagram">
                         <?php $data = $core->httpHelper->getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
                         foreach ($data->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>

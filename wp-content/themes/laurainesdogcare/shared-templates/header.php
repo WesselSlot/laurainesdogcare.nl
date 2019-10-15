@@ -1,3 +1,9 @@
+<?php
+require_once (TEMPLATEPATH.'/core/core.php');
+$core = new Core();
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
