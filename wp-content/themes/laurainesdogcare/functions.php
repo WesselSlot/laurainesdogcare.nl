@@ -11,7 +11,6 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function load_footer_scripts() {
     wp_enqueue_script('theme-script', get_template_directory_uri().'/js/clean-blog.min.js', false);
-
 }
 
 add_action( 'wp_footer', 'load_footer_scripts' );

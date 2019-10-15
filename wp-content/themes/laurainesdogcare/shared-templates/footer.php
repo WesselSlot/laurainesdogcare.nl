@@ -1,5 +1,23 @@
-    <?php wp_footer(); ?>
+<?php
+require (TEMPLATEPATH.'/core/core.php');
+$core = new Core();
+?>
+<?php wp_footer(); ?>
     <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <a target="_blank" href="https://www.instagram.com/lauraine_dogcare/">
+                    <div id="instagram">
+                        <?php $data = $core->httpHelper->getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
+                        foreach ($data->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>
+                            <div class="insta-item">
+                                <img src="<?php echo $item->node->thumbnail_src ?>" alt="">
+                            </div>
+                        <?php } ?>
+                    </div>
+                </a>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">

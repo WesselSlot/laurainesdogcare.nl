@@ -1,3 +1,7 @@
+<? /**
+ * Template Name: Content page
+ */
+?>
 <?php load_template(TEMPLATEPATH . '/shared-templates/header.php'); ?>
 
 <header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/about-bg.jpg' ?>)">
