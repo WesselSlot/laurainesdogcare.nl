@@ -4,9 +4,8 @@
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         $response = curl_exec($ch);
+        return json_decode($response);
 
-
-        return json_decode($response);;
     }
 ?>
 <?php wp_footer(); ?>
@@ -15,9 +14,17 @@
             <div class="row">
                 <a target="" href="https://www.instagram.com/lauraine_dogcare/">
                     <div id="instagram">
-                        <?php $data = getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
-                        var_dump($data);
-                        foreach ($data->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>
+                        <?php
+                        $ch = curl_init();
+                        curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com/lauraine_dogcare/?__a=1");
+                        // Set so curl_exec returns the result instead of outputting it.
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                        // Get the response and close the channel.
+                        $response = curl_exec($ch);
+
+                        curl_close($ch);
+                        var_dump($response);
+                        foreach ($response->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>
                             <div class="insta-item">
                                 <img src="<?php echo $item->node->thumbnail_src ?>" alt="">
                             </div>
