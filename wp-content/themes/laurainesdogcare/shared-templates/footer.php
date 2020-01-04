@@ -16,7 +16,7 @@
                     <div id="instagram">
                         <?php
                         $ch = curl_init();
-                        curl_setopt($ch, CURLOPT_URL, "https://www.instagram.com/lauraine_dogcare/?__a=1");
+                        curl_setopt($ch, CURLOPT_URL, "https://www.google.nl/");
                         // Set so curl_exec returns the result instead of outputting it.
                         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                         // Get the response and close the channel.
