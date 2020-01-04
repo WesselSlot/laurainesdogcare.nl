@@ -1,4 +1,4 @@
 language: php
 php:
   - 7.1.9
-script: phpunit --no-configuration Tests /var/www/public/ws-reservation/tests/Tests.php
+script: composer test
