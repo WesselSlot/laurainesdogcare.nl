@@ -1,6 +1,13 @@
 <?php
-require_once  (dirname(__FILE__).'/../core/Core.php');
-$core = new Core();
+    function getRequest($url) {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        return json_decode($response);;
+    }
 ?>
 <?php wp_footer(); ?>
     <footer>
@@ -8,7 +15,7 @@ $core = new Core();
             <div class="row">
                 <a target="" href="https://www.instagram.com/lauraine_dogcare/">
                     <div id="instagram">
-                        <?php $data = $core->httpHelper->getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
+                        <?php $data = getRequest('https://www.instagram.com/lauraine_dogcare/?__a=1');
                         foreach ($data->graphql->user->edge_owner_to_timeline_media->edges as $item) { ?>
                             <div class="insta-item">
                                 <img src="<?php echo $item->node->thumbnail_src ?>" alt="">
