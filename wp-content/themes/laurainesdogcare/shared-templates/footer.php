@@ -4,7 +4,7 @@
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         $response = curl_exec($ch);
-        curl_close($ch);
+
 
         return json_decode($response);;
     }
