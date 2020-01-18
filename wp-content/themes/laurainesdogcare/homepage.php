@@ -70,7 +70,7 @@
             <a href="<?php echo get_site_url()."/prijzen"?>">
                 <div class="info-panel">
                     <i class="fas fa-money-bill-alt"></i>
-                    <h3>Prijzen</h3>
+                    <span>Prijzen</span>
                 </div>
             </a>
         </div>
@@ -86,7 +86,7 @@
             <a target="_blank" href="https://www.instagram.com/lauraine_dogcare/">
                 <div class="info-panel">
                     <i class="fas fa-photo-video"></i>
-                    <h3>Foto's</h3>
+                    <span>Foto's</span>
                 </div>
             </a>
         </div>

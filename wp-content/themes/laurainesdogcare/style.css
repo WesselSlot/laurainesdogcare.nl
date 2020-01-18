@@ -11,8 +11,12 @@ Tags: bootstrap
 .font-color-white {
     color: #fff;
 }
+a:focus, a:hover {
+    color: #FDCDA7!important;
+}
+
 .font-color-primary {
-    color: #0085a1;
+    color: #FDCDA7;
 }
 .background-color-gray {
     background-color: #f2f2f2;
@@ -28,11 +32,19 @@ Tags: bootstrap
     margin-bottom: 60px;
     margin-top: 30px;
 }
+h1 {
+    color: #FDCDA7!important;
+}
 
-h3 {
+body h2 {
+    color: #8BA5D1!important;
+}
+body h3 {
     margin: 0px!important;
     padding: 0px!important;
+    color: #FDCDA7!important;
 }
+
 
 /*
 Table
@@ -62,22 +74,6 @@ table th {
 /*
 Homepage
 */
-.info-panel {
-    background-color: #0085a1;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 40px;
-    border-radius: .25rem;
-}
-
-.info-panel .fas {
-    margin-top: 30px;
-}
-
-.icon-font-size {
-    font-size: 80px;
-}
-
 #mainNav.is-fixed {
     top: -71px!important;
 }
@@ -107,22 +103,36 @@ Homepage
     text-decoration: none!important;
 }
 
+.info-panel {
+    background-color: #F5CBD7;
+    width: 100%;
+    height: 185px;
+    margin-bottom: 40px;
+    border-radius: .25rem;
+}
+
+.info-panel span {
+    width: 100%;
+    margin-top: -10px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    float: left;
+}
+
+.info-panel .fas {
+    margin-top: 30px;
+}
+
+.icon-font-size {
+    font-size: 80px;
+}
+
+
 /*
 Footer
  */
 footer {
     padding: 20px 0 65px!important;
 }
-#instagram {
-    width: 100%;
-    margin-bottom: 40px;
-    float: left;
-}
-#instagram .insta-item{
-    width: 8.333333%;
-    float: left;
-}
 
-#instagram img {
-    width: 100%;
-}
