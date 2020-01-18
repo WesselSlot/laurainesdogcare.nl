@@ -4,7 +4,7 @@
 ?>
 <?php load_template(TEMPLATEPATH . '/shared-templates/header.php'); ?>
 
-<header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/about-bg.jpg' ?>)">
+<header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/404db9b6-5ab9-4784-a330-972d3df58638.jpg' ?>)">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">

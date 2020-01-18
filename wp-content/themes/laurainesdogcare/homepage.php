@@ -6,7 +6,7 @@
 <?php $metaData = get_post_custom(get_the_ID());
 ?>
 
-<header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/404db9b6-5ab9-4784-a330-972d3df58638.jpg' ?>)">
+<header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/ed7ac935-ad13-4a6b-aa22-b97cb1457fa1.jpg' ?>)">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
