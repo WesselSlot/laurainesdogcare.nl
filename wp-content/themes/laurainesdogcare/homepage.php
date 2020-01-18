@@ -3,6 +3,8 @@
  */
 ?>
 <?php load_template(TEMPLATEPATH . '/shared-templates/header.php'); ?>
+<?php $metaData = get_post_custom(get_the_ID());
+?>
 
 <header class="masthead" style="background-image: url(<?php echo get_template_directory_uri().'/images/home-bg.jpg' ?>)">
     <div class="overlay"></div>
@@ -10,8 +12,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Honden opvang Amsterdam</h1>
-                    <span class="subheading">Lorem ipsum dolor sit amet</span>
+                    <h1><?php echo $metaData['banner-title'][0]; ?></h1>
+                    <span class="subheading"><?php echo $metaData['banner-subtitle'][0]; ?></span>
                 </div>
             </div>
         </div>
@@ -90,5 +92,4 @@
         </div>
     </div>
 </div>
-
 <?php load_template(TEMPLATEPATH . '/shared-templates/footer.php'); ?>
