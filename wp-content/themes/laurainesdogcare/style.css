@@ -82,9 +82,16 @@ Homepage
     top: -71px!important;
 }
 
-#workflow {
+#reviews {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#reviews h3 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px!important;
+    margin-top: 10px!important;
 }
 
 .go-to-buttons {
