@@ -36,27 +36,27 @@
 <div class="container-fluid background-color-gray">
     <div class="container">
             <div id="reviews">
-                <h3 class="font-color-primary">Tevreden honden</h3>
+                <h3 class="font-color-primary">Werkwijze</h3>
                 <div class="card-deck">
                     <div class="card">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri().'/images/IMG_3528.jpg' ?>" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Hond 1</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Puppy’s</h5>
+                            <p class="card-text">Puppy’s zijn hartstikke welkom. Buiten dat ze goed gesocialiseerd worden met verschillende honden. Kunnen er ook basis commando’s geleerd worden en kunnen ze gesocialiseerd worden met paarden.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri().'/images/IMG_5430.jpg' ?>" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Hond 2</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Huiselijke sfeer</h5>
+                            <p class="card-text">Doordat de honden in huiselijke sfeer verblijven voelen ze zich erg snel op hun gemak. Na de wandelingen, zoeken de meeste honden een fijne plek om even te rusten.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img-top" src="<?php echo get_template_directory_uri().'/images/B8C68543-CF8C-487C-96BA-C88B48EAABC1.jpg' ?>"  alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Hond 3</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <h5 class="card-title">Wandelingen</h5>
+                            <p class="card-text">Tijdens de wandelingen word er enorm veel gespeeld, gerend en gezwommen. Doordat er steeds op verschillende plekken gewandeld word, worden de honden steeds uitgedaagd om te ontdekken naar nieuwe geurtjes. </p>
                         </div>
                     </div>
                 </div>
