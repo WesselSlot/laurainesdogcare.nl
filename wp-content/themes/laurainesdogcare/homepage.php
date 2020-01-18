@@ -66,24 +66,24 @@
 
 <div class="container">
     <div class="row go-to-buttons">
-        <div class="col-lg-4 center-text font-color-white icon-font-size">
-            <a href="">
+        <div class="col-lg-6 center-text font-color-white icon-font-size">
+            <a href="<?php echo get_site_url()."/prijzen"?>">
                 <div class="info-panel">
-                    <i class="fas fa-dog"></i>
-                    <h3>Dagindeling</h3>
+                    <i class="fas fa-money-bill-alt"></i>
+                    <h3>Prijzen</h3>
                 </div>
             </a>
         </div>
-        <div class="col-lg-4 center-text font-color-white icon-font-size">
-            <a href="">
-                <div class="info-panel">
-                    <i class="fas fa-calendar-day"></i>
-                    <h3>Online agenda</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 center-text font-color-white icon-font-size">
-            <a href="">
+<!--        <div class="col-lg-4 center-text font-color-white icon-font-size">-->
+<!--            <a href="">-->
+<!--                <div class="info-panel">-->
+<!--                    <i class="fas fa-calendar-day"></i>-->
+<!--                    <h3>Online agenda</h3>-->
+<!--                </div>-->
+<!--            </a>-->
+<!--        </div>-->
+        <div class="col-lg-6 center-text font-color-white icon-font-size">
+            <a target="_blank" href="https://www.instagram.com/lauraine_dogcare/">
                 <div class="info-panel">
                     <i class="fas fa-photo-video"></i>
                     <h3>Foto's</h3>
