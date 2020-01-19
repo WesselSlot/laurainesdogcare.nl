@@ -56,7 +56,7 @@
                         <img class="card-img-top" src="<?php echo get_template_directory_uri().'/images/B8C68543-CF8C-487C-96BA-C88B48EAABC1.jpg' ?>"  alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Wandelingen</h5>
-                            <p class="card-text">Tijdens de wandelingen word er enorm veel gespeeld, gerend en gezwommen. Doordat er steeds op verschillende plekken gewandeld word, worden de honden steeds uitgedaagd om te ontdekken naar nieuwe geurtjes. </p>
+                            <p class="card-text">Tijdens de wandelingen wordt er enorm veel gespeeld, gerend en gezwommen. Doordat er steeds op verschillende plekken gewandeld word, worden de honden steeds uitgedaagd om te ontdekken naar nieuwe geurtjes. </p>
                         </div>
                     </div>
                 </div>
