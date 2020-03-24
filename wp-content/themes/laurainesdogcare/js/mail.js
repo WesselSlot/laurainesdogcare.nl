@@ -3,8 +3,7 @@ jQuery("Body").ready(function ($) {
         e.preventDefault();
         var data = Array($('#name').val(), $('#email').val(), $('#phone').val(), $('#message').val());
         $.post( ajax.url, {
-            action: "send_form_action",
-            data: ""
+            action: "send_form_action"
         }).done(function(msg){
             console.log(msg);
         }).fail(function(xhr, status, error) {
