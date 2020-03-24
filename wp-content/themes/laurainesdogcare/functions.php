@@ -43,11 +43,10 @@ function send_form() {
 //
 //    wp_mail($to, $subject, $body, $headers);
 
-    wp_die();
 }
 
-function trimCharacters($value) {
-    return htmlspecialchars(trim($value));
-}
+//function trimCharacters($value) {
+//    return htmlspecialchars(trim($value));
+//}
 
 
