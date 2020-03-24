@@ -11,8 +11,10 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 function load_footer_scripts() {
     wp_enqueue_script('theme-script', get_template_directory_uri().'/js/clean-blog.min.js', false);
+    wp_enqueue_script('mail-script', get_template_directory_uri().'/js/mail.js', false);
+    wp_localize_script( 'mail-script', 'ajax',
+        array( 'url' => admin_url( 'admin-ajax.php' ) ) );
 }
-
 add_action( 'wp_footer', 'load_footer_scripts' );
 
 // add a custom menu
@@ -23,3 +25,7 @@ add_action( 'init', 'wpb_custom_new_menu' );
 
 // activate thumbnails
 add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+
+include (__DIR__  . '/core/mail.php');
+
+
